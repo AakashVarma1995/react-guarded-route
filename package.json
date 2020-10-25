@@ -1,8 +1,8 @@
 {
   "name": "react-guarded-route",
-  "version": "1.0.0",
-  "description": " ",
-  "author": "",
+  "version": "1.0.2",
+  "description": "react-guarded-route allows you to guard your routes by a validation fuction.",
+  "author": "Aakash Varma",
   "license": "MIT",
   "repository": " ",
   "main": "dist/index.js",
@@ -24,7 +24,8 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.0.0",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "microbundle-crl": "^0.13.10",
@@ -49,5 +50,12 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "react",
+    "react-router",
+    "protected route",
+    "guarded route",
+    "route validator"
   ]
 }

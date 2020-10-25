@@ -1,10 +1,25 @@
 import React from 'react'
-
-import { ExampleComponent } from 'react-guarded-route'
-import 'react-guarded-route/dist/index.css'
-
-const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+import { Route, Redirect } from 'react-router-dom'
+const ProtectedRoute = ({component: Component, validatorFunction:validatorFunction, ...rest}) =>{
+    return (
+        <Route {...rest} 
+        render={
+            props =>{
+                if(validatorFunction===true){
+                    return <Component {...props} />;
+                }
+                else{
+                    return <Redirect to={{
+                        pathname:'/',
+                        state:{
+                            from: props.location
+                        }
+                    }}/>
+                }
+                
+            }
+        }
+        />
+    )
 }
-
-export default App
+export default ProtectedRoute
