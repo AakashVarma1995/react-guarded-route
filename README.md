@@ -30,7 +30,11 @@ export default function App() {
     <Router>
         <Switch>
             <Route exact path = '/' component={Home}></Route>
-            <GuardedRoute path '/dashboard' component={Dashboard} validatorFucntion = {validatorFunction()}>
+            <GuardedRoute 
+                path = '/dashboard'
+                component = {Dashboard}
+                redirectTo = '/login' //Redirect to '/login' if validatorFunction returns false
+                validatorFucntion = {validatorFunction()}>
         </Switch>
     </Router>
   )
