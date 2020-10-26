@@ -1,6 +1,6 @@
 {
   "name": "react-guarded-route",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react-guarded-route allows you to guard your routes by a validation fuction.",
   "author": "Aakash Varma",
   "license": "MIT",
