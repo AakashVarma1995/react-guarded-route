@@ -10,7 +10,7 @@ const GuardedRoute = ({component: Component, validatorFunction:validatorFunction
                 }
                 else{
                     return <Redirect to={{
-                        pathname:redirectTo,
+                        pathname:redirectTo?redirectTo:'/',
                         state:{
                             from: props.location
                         }

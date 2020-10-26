@@ -33,7 +33,7 @@ export default function App() {
             <GuardedRoute 
                 path = '/dashboard'
                 component = {Dashboard}
-                redirectTo = '/login' //Redirect to '/login' if validatorFunction returns false
+                redirectTo = '/login' //(Optional) Redirect to '/login' if validatorFunction returns false. Will redirect to '/' if not provided. 
                 validatorFucntion = {validatorFunction()}>
         </Switch>
     </Router>
