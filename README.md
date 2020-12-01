@@ -34,7 +34,7 @@ export default function App() {
                 path = '/dashboard'
                 component = {Dashboard}
                 redirectTo = '/login' //(Optional) Redirect to '/login' if validatorFunction returns false. Will redirect to '/' if not provided. 
-                validatorFucntion = {validatorFunction()}>
+                validatorFunction = {validatorFunction()}>
         </Switch>
     </Router>
   )
